@@ -1,0 +1,4 @@
+#!/bin/sh
+export PYTHONDONTWRITEBYTECODE=1
+RUNTIME_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec "$RUNTIME_DIR/fairplay-decrypt-helper-arm64" python "$@"
